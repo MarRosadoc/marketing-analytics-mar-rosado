@@ -23,6 +23,6 @@ modelo_lr.fit(variable_x,variable_y)
 
 #Crea boton que dice Predecir, al dar click ejecuta las lineas del IF
 if st.button("Predecir"):
- resultado = modelo_lr.predict([[gasto]])
-    #Muestra mensaje de exito
+    resultado = modelo_lr.predict([[gasto]])
+  #Muestra mensaje de exito
     st.success(f"Las ventas proyectadas para una inversion de ${gasto} son: ${resultado[0]}")
